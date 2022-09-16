@@ -1,1 +1,1 @@
-# wedding-yh-sj.github.io
+# https://yoohyuklim.github.io/wedding-yh-sj
