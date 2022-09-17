@@ -1,3 +1,71 @@
+/* header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} */
+
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+}
+
 body {
-    background-color: beige;
+    background-color: white;
+}
+
+#cover {
+    z-index: 1;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+.cover_view {
+    max-height: 100vh;
+    transition: 0.5s;
+    margin: auto;
+    position: fixed;
+    top: 1rem;
+}
+
+.cover_text {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.web_image {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: scale-down;
+    transition: opacity 0.5;
+}
+
+.invite_msg {
+    display: flex;
+    color: black;
+    background: skyblue;
+    margin: auto;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gainsboro;
+    height: 50rem;
+    position: relative;
 }
