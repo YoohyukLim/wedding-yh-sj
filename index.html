@@ -15,6 +15,8 @@
         <!-- <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"> -->
         <title>결혼합니다~ 타이틀</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="scripts/scroll.js" defer></script>
+        <script src="scripts/location.js" defer></script>
     </head>
     <body width: 100%; overflow-x: hidden;>
         <div id="cover"></div>
@@ -35,8 +37,7 @@
             <img src="images/cover2.jpg" class="web_image">
             <div class="cover_text">설명 라블라블</div>
         </div>
-        
-
+    
         <div id="blank_div"></div>
 
         <div class="invite_msg">
@@ -49,7 +50,27 @@
             <p>대충 어쩌구 어쩌구</p>
         </div>
         <div class="location">
-            <p>지도</p>
+            <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+            <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=d0c902fa29b5b46643c9124679b42bb8"></script>
+            <div id="map" style="width:80%;height:80%;margin: auto;"></div>
+            <div id="location_text">지도 설명이 여기에 들어갑니다.</div>
+            <div id="location_actions">
+                <img
+                    src="https://play-lh.googleusercontent.com/DYeQ02AyIghsirp4ea3oEnyxT3X0GgTZrXYR8G7AN6tRr-9mFcQIJdCUub5VHiWKHA=w240-h480-rw"
+                    alt="카카오맵 길찾기"
+                    onclick="window.open('https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,503950,1106707&rt1=&rt2=%EB%8D%94%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B2%A0%EC%9D%BC&rtIds=,11024925');"
+                    style="width: 3rem;height: 3rem;"/>
+                <img 
+                    id="kakao_navi"
+                    src="https://developers.kakao.com/assets/img/about/buttons/navi/kakaonavi_btn_medium.png"
+                    alt="카카오내비 길찾기"
+                    style="width: 3rem;height: 3rem;"/>
+                <img
+                    src="https://play-lh.googleusercontent.com/yB6ePH3QA0EMU8qTqM5tOPtpZ8bZeIYhb9Oi2RHOy9YvK5fdxIlbN1H46QtdHNC_1g=w240-h480-rw"
+                    alt="네이버맵 길찾기"
+                    onclick="window.open('https://map.naver.com/v5/directions/-/14139570.30960412,4506762.195639024,%EB%8D%94%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B2%A0%EC%9D%BC,12023277,PLACE_POI/-/car?c=14139570.3096046,4506762.1956396,15,0,0,0,dh');"
+                    style="width: 3rem;height: 3rem;"/>
+            </div>
         </div>
         <div class="contact">
             <p>연락처</p>
@@ -60,7 +81,5 @@
         <div class="share">
             <p>공유하기</p>
         </div>
-        
-        <script src="scripts/scroll.js"></script>
     </body>
 </html>

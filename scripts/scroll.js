@@ -32,7 +32,6 @@ function applyOpacity(coverIdx, scrollPos) {
 }
 
 function handleScrollEvent(scrollPos) {
-    console.log(scrollPos);
     for (let i = 0; i < covers.length; i++) {
         applyOpacity(i, scrollPos);
     }
@@ -52,10 +51,12 @@ document.addEventListener('scroll', (e) => {
     }
 });
 
-
 // finish loading
+const topCover = document.getElementById("cover");
 setTimeout(() => {
-    const topCover = document.getElementById("cover");
     topCover.style.transition = "0.2s"
     topCover.style.opacity = 0;
-}, 500)
+}, 500);
+setTimeout(() => {
+    topCover.remove();
+}, 700);

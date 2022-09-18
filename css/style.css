@@ -36,7 +36,6 @@ body {
 .cover_text {
     background-color: white;
     width: 100%;
-    text-align: center;
 }
 
 .web_image {
@@ -51,21 +50,29 @@ body {
 }
 
 .invite_msg {
-    display: flex;
+    display: block;
     color: black;
     background: skyblue;
     margin: auto;
     height: 10rem;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
 .gallery {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     background-color: gainsboro;
     height: 50rem;
     position: relative;
+}
+
+.location {
+    display: block;
+    background-color: gainsboro;
+    height: 30rem;
+    position: relative;
+}
+
+.location_actions {
+    display: flex;
 }
