@@ -10,6 +10,7 @@ let currentCoverIdx = 0;
 let posMap = new Map();
 
 document.getElementById("blank_div").style.height = coverHeight * covers.length + "px";
+const locationHeaderImage = document.getElementById("location_img");
 
 covers.forEach((entry, idx) => {
     if (idx > 0) {
@@ -18,7 +19,7 @@ covers.forEach((entry, idx) => {
     posMap.set(idx, idx * coverHeight)
 })
 
-function applyOpacity(coverIdx, scrollPos) {
+function applyOpacityOfCover(coverIdx, scrollPos) {
     const element = covers[coverIdx];
     const elemPos = posMap.get(coverIdx);
 
@@ -31,10 +32,27 @@ function applyOpacity(coverIdx, scrollPos) {
     }
 }
 
+function applyOpacityOfLocationImage(scrollPos) {
+    const locationPos = document.getElementById("location").offsetTop;
+    
+    console.log(scrollPos + ":" + locationPos + ":" + scrollDown);
+    if (scrollDown) {
+        if (scrollPos >= locationPos) {
+            locationHeaderImage.style.opacity = 0;
+        }
+    } else {
+        if (scrollPos <= locationPos) {
+            locationHeaderImage.style.opacity = 1;
+        }
+    }
+}
+
 function handleScrollEvent(scrollPos) {
     for (let i = 0; i < covers.length; i++) {
-        applyOpacity(i, scrollPos);
+        applyOpacityOfCover(i, scrollPos);
     }
+
+    applyOpacityOfLocationImage(scrollPos);
 }
 
 document.addEventListener('scroll', (e) => {
