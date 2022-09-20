@@ -10,19 +10,6 @@ body {
     background-color: white;
 }
 
-dt {
-    font-size: 1.2rem;
-    text-align: left;
-    margin-top: 1rem;
-    margin-left: 2rem;
-}
-
-dd {
-    font-size: 1.1rem;
-    text-align: left;
-    margin-left: 2rem;
-}
-
 #cover {
     z-index: 1;
     height: 100vh;
@@ -119,6 +106,26 @@ dd {
 
 #location_info {
     position: relative;
+}
+
+.map_title dt {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: calc(100% - 3rem)
+}
+
+.map_title dt div {
+    text-align: left;
+    width: fit-content;
+}
+
+.map_title dd {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-left: 2rem;
 }
 
 .call_icon {
