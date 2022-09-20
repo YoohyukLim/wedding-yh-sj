@@ -153,6 +153,7 @@ body {
 .location_actions {
     display: flex;
     justify-content: flex-end;
+    margin-top: 1rem;
 }
 
 .location_actions img {
