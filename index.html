@@ -18,7 +18,7 @@
         <script src="scripts/scroll.js" defer></script>
         <script src="scripts/location.js" defer></script>
     </head>
-    <body width: 100%; overflow-x: hidden;>
+    <body>
         <div id="cover"></div>
 
         <div class="cover_view">
@@ -46,23 +46,36 @@
         <div class="gallery">
             <p>갤러리</p>
         </div>
-        <div class="card">
-            <p>대충 어쩌구 어쩌구</p>
+        <div class="calendar" style="background-color: white;">
+            <p>달력</p>
         </div>
+
+        <div class="location_header">
+            <div class="location_img_cover"></div>
+            <img src="images/thewhiteveil.jpg" class="location_img">
+        </div>
+        <h2 id="location_header">오시는 길</h2>
         <div class="location">
             <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
             <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=d0c902fa29b5b46643c9124679b42bb8"></script>
-            <div id="map" style="width:80%;height:80%;margin: auto;"></div>
-            <div id="location_text">지도 설명이 여기에 들어갑니다.</div>
-            <div id="location_actions">
-                <img
-                    src="https://play-lh.googleusercontent.com/DYeQ02AyIghsirp4ea3oEnyxT3X0GgTZrXYR8G7AN6tRr-9mFcQIJdCUub5VHiWKHA=w240-h480-rw"
-                    alt="카카오맵 길찾기"
-                    onclick="window.open('https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,503950,1106707&rt1=&rt2=%EB%8D%94%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B2%A0%EC%9D%BC&rtIds=,11024925');"
-                    style="width: 3rem;height: 3rem;"/>
+            <div id="map" style="width:100%;height:30vh;"></div>
+            <div id="location_info">
+                <dl class="map_title" style="padding-right:1%;">
+                    <dt style="line-height:1.6em;">
+                        <span class="weddinghall_name" style="margin-right:0.5rem;">더화이트베일</span>
+                        <span span="" class="weddinghall_detail">1층 화이트베일홀</span>
+                    </dt>
+                    <dd id="address_detail">서울 서초구 서초중앙로 14</dd>
+                    <dd>02-3474-5000</dd>
+                </dl>
+                <a href="tel:02-3474-5000" class="call_icon">
+                    <img src="images/call_icon.png" alt="예식장 전화하기">
+                </a>
+            </div>
+            <div class="location_actions">
                 <img 
                     id="kakao_navi"
-                    src="https://developers.kakao.com/assets/img/about/buttons/navi/kakaonavi_btn_medium.png"
+                    src="https://play-lh.googleusercontent.com/tmKbM_kM31bRZoU1SkKw2LB30CFdm-MZYP0XBxlJzhYuJfbulrMi_P88VOxuZszXhPk=w240-h480-rw"
                     alt="카카오내비 길찾기"
                     style="width: 3rem;height: 3rem;"/>
                 <img
@@ -70,15 +83,24 @@
                     alt="네이버맵 길찾기"
                     onclick="window.open('https://map.naver.com/v5/directions/-/14139570.30960412,4506762.195639024,%EB%8D%94%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B2%A0%EC%9D%BC,12023277,PLACE_POI/-/car?c=14139570.3096046,4506762.1956396,15,0,0,0,dh');"
                     style="width: 3rem;height: 3rem;"/>
+                <img
+                    src="https://play-lh.googleusercontent.com/WcrqQ9atNdC7dp4vG4fWue0kRdMxiDSTKu9E1Zj7EmGcgdQ8j3u9_2Tt8vw-zPvKCkg=w240-h480-rw"
+                    alt="티맵 길찾기"
+                    onclick="window.open('tmap://search?name=더화이트베일');"
+                    style="width: 3rem;height: 3rem;"/>
+                <div class="copy_location" onclick="copyLocation()">
+                    <img src="images/link_icon.png" alt="주소 복사"/>
+                </div>
             </div>
         </div>
-        <div class="contact">
+
+        <div class="contact" style="height: 30vh;background-color: white;position: relative;">
             <p>연락처</p>
         </div>
-        <div class="account">
+        <div class="account" style="height: 30vh;background-color: white;position: relative;">
             <p>계좌정보</p>
         </div>
-        <div class="share">
+        <div class="share" style="height: 30vh;background-color: white;position: relative;">
             <p>공유하기</p>
         </div>
     </body>

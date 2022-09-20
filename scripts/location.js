@@ -21,4 +21,15 @@ kakaoNavi.onclick = function() {
       coordType: 'wgs84',
     })
   }
-  
+
+function copyLocation() {
+    const textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = '서울 서초구 서초중앙로 14';
+
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea)
+
+    alert("주소를 복사했습니다.")
+}
