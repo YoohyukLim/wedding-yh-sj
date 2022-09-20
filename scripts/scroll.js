@@ -34,8 +34,7 @@ function applyOpacityOfCover(coverIdx, scrollPos) {
 
 function applyOpacityOfLocationImage(scrollPos) {
     const locationPos = document.getElementById("location").offsetTop;
-    
-    console.log(scrollPos + ":" + locationPos + ":" + scrollDown);
+
     if (scrollDown) {
         if (scrollPos >= locationPos) {
             locationHeaderImage.style.opacity = 0;
