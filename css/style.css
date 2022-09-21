@@ -146,7 +146,6 @@ h2 {
     right: 0.5rem;
     width: 3rem;
     height: 3rem;
-    border-radius: 50%;
     vertical-align: middle;
 }
 
@@ -193,7 +192,6 @@ h2 {
     background-color: white;
     position: relative;
 }
-
 
 .account_details div {
     color: white;
@@ -282,4 +280,24 @@ h2 {
     height: 3rem;
     line-height: 3rem;
     margin: 0.4rem auto;
+}
+
+.share_table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.share_table .share_btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+}
+
+.share_table .share_btn img {
+    margin: 0 auto;
+    width: 2.3rem;
+    height: 2.3rem;
 }

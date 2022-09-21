@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="scripts/common.js" defer></script>
         <script src="scripts/scroll.js" defer></script>
-        <script src="scripts/location.js" defer></script>
+        <script src="scripts/kakao_api.js" defer></script>
         <script src="scripts/popup.js" defer></script>
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     </head>
     <body>
         <div id="cover"></div>
@@ -58,7 +59,6 @@
         </div>
         <h2 id="location_header">오시는 길</h2>
         <div id="location">
-            <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
             <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=d0c902fa29b5b46643c9124679b42bb8"></script>
             <div id="map" style="width:100%;height:30vh;"></div>
             <div id="location_info">
@@ -117,6 +117,14 @@
         </div>
         <div class="share" style="height: 30vh;background-color: white;position: relative;">
             <h2>공유하기</h2>
+            <div class="share_table">
+                <img class="share_btn"
+                    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                    onclick="kakaoShare();"/>
+                <div class="share_btn" onclick="copyToClipboard('링크', 'https://yoohyuklim.github.io/wedding-yh-sj/')">
+                    <img src="images/link_icon.png" alt="링크 복사"/>
+                </div>
+            </div>
         </div>
     </body>
 

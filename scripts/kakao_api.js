@@ -21,3 +21,9 @@ kakaoNavi.onclick = function() {
       coordType: 'wgs84',
     })
   }
+
+function kakaoShare() {
+  Kakao.Share.sendCustom({
+    templateId: 83174,
+  });
+}
