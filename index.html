@@ -15,8 +15,10 @@
         <!-- <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"> -->
         <title>결혼합니다~ 타이틀</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="scripts/common.js" defer></script>
         <script src="scripts/scroll.js" defer></script>
         <script src="scripts/location.js" defer></script>
+        <script src="scripts/popup.js" defer></script>
     </head>
     <body>
         <div id="cover"></div>
@@ -97,20 +99,68 @@
                     alt="티맵 길찾기"
                     onclick="window.open('tmap://search?name=더화이트베일');"
                     style="width: 3rem;height: 3rem;"/>
-                <div class="copy_location" onclick="copyLocation()">
+                <div class="copy_location" onclick="copyToClipboard('주소', '서울 서초구 서초중앙로 14')">
                     <img src="images/link_icon.png" alt="주소 복사"/>
                 </div>
             </div>
         </div>
 
         <div class="contact" style="height: 30vh;background-color: white;position: relative;">
-            <p>연락처</p>
+            <h2>연락처</h2>
         </div>
-        <div class="account" style="height: 30vh;background-color: white;position: relative;">
-            <p>계좌정보</p>
+        <div class="account">
+            <h2>마음 보내실 곳</h2>
+            <div class="account_details">
+                <div id="groom_account" onclick="openPopup('groom_popup')">신랑측 계좌 정보</div>
+                <div id="bride_account" onclick="openPopup('bride_popup')">신부측 계좌 정보</div>
+            </div>
         </div>
         <div class="share" style="height: 30vh;background-color: white;position: relative;">
-            <p>공유하기</p>
+            <h2>공유하기</h2>
         </div>
     </body>
+
+    <div class="popup_layer" id="groom_popup">
+        <div class="popup_box">
+            <h3 class="account_header">신랑 계좌</h3>
+            <div class="account_info">
+                <div class="account_name">
+                    <span>우리은행 (예금주: 임유혁)</span>
+                    <span>1002-246-792281</span>
+                </div>
+                <img class="account_info_detail"
+                    src="https://play-lh.googleusercontent.com/W43xj43ErMIs5BQgCdMKEa0NXCoUUW8DjQc5SxcDfLrC26H8sHDmoFIUWLYmsQahpo0=w240-h480-rw"
+                    onclick="window.open('https://qr.kakaopay.com/Ej8uUiVoP');"
+                    alt="카카오페이 송금"/>
+                <div class="account_info_detail" onclick="copyToClipboard('계좌', '우리은행 1002-246-792281')">
+                    <img src="images/link_icon.png" alt="계좌 복사"/>
+                </div>
+            </div>
+            <h3 class="account_header">혼주 계좌</h3>
+
+            <div class="popup_btn" id="close_popup" onclick="closePopup(this)">닫기</div>
+        </div>
+    </div>
+
+    <div class="popup_layer" id="bride_popup">
+        <div class="popup_box">
+            <h3 class="account_header">신부 계좌</h3>
+            <div class="account_info">
+                <div class="account_name">
+                    <span>우리은행 (예금주: 조수정)</span>
+                    <span>1002-246-792281</span>
+                </div>
+                <img class="account_info_detail"
+                    src="https://play-lh.googleusercontent.com/W43xj43ErMIs5BQgCdMKEa0NXCoUUW8DjQc5SxcDfLrC26H8sHDmoFIUWLYmsQahpo0=w240-h480-rw"
+                    onclick="window.open('https://qr.kakaopay.com/Ej8uUiVoP');"
+                    alt="카카오페이 송금"/>
+                <div class="account_info_detail" onclick="copyToClipboard('계좌', '우리은행 1002-246-792281')">
+                    <img src="images/link_icon.png" alt="계좌 복사"/>
+                </div>
+            </div>
+            <h3 class="account_header">혼주 계좌</h3>
+
+            <div class="popup_btn" id="close_popup" onclick="closePopup(this)">닫기</div>
+        </div>
+    </div>
 </html>
