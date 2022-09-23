@@ -71,7 +71,7 @@ h2 {
 .location_header {
     top: -2vw;
     width: 100%;
-    height: min(40vw, 280px);
+    height: min(45vw, 280px);
     position: sticky;
     vertical-align: middle;
     z-index: -2;
