@@ -209,6 +209,7 @@ h2 {
 
 .contact_info {
     display: flex;
+    justify-content: space-between;
     width: 80%;
     margin-bottom: 1rem;
 }
@@ -216,12 +217,16 @@ h2 {
 .contact .contact_info span {
     font-size: 1.5rem;
     text-align: left;
+    width: fit-content;
+    margin: 0;
 }
 
 .contact .contact_info div {
     display: flex;
-    width: 12rem;
+    width: 30%;
+    max-width: 12rem;
     justify-content: space-between;
+    margin: 0
 }
 
 .contact .contact_info div img {
