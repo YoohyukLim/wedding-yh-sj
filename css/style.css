@@ -12,14 +12,20 @@ body {
     background-color: white;
 }
 
-h2 {
-    text-align: left;
+.header {
+    display: flex;
+    align-items: flex-end;
     width: calc(100% - 1rem);
-    margin-top: 0;
-    margin-bottom: 0;
+    height: 10vh;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    background-color: white;
+}
+
+.header h2 {
+    text-align: left;
     font-size: 1.8rem;
+    margin-bottom: 0;
 }
 
 #cover {
