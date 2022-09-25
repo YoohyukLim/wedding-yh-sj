@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Nanum BaegEuiEuiCeonSa;
+    src: local(Nanum BaegEuiEuiCeonSa),
+         local(Nanum BaegEuiEuiCeonSa),
+         url(../fonts/nanum-baegeuieuiceonsa.woff) format('woff'),
+         url(../fonts/nanum-baegeuieuiceonsa.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    unicode-range: U+0-10FFFF;
+  }
+  
