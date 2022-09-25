@@ -29,12 +29,24 @@ h2 {
     position: fixed;
     top: 0;
 }
+
 .cover_view {
     max-height: 100vh;
     transition: 0.5s;
     margin: auto;
     position: fixed;
     top: 1rem;
+}
+
+.web_image {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(80vw, 480px);
+    max-height: calc(100vh - 14rem);
+    object-fit: scale-down;
+    transition: opacity 0.5;
 }
 
 .cover_header {
@@ -51,17 +63,6 @@ h2 {
     font-size: 1.8rem;
     margin-top: 1rem;
     font-weight: bold;
-}
-
-.web_image {
-    display: block;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: min(80vw, 480px);
-    max-height: 80vh;
-    object-fit: scale-down;
-    transition: opacity 0.5;
 }
 
 .invite_msg {
