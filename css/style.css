@@ -188,6 +188,67 @@ h2 {
     height: 2.3rem;
 }
 
+.contact {
+    background-color: white;
+    position: relative;
+}
+
+.contact_info {
+    display: flex;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.contact .contact_info span {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact .contact_info div {
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+}
+
+.contact .contact_info div img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.parent_infos {
+    display: flex;
+    width: 80%
+}
+
+.parent_info_list {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.parent_info_list div {
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.parent_info_list span {
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+.parent_info_list div img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.parent_info div .parent {
+    font-size: 0.9rem;
+}
+
+.parent_info div .parent_name {
+    font-size: 1rem;
+}
+
 .account {
     display: flex;
     flex-direction: column;
@@ -204,6 +265,7 @@ h2 {
     height: 3rem;
     line-height: 3rem;
     margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
 .popup_box .account_header {
