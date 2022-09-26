@@ -20,6 +20,7 @@
         <script src="scripts/scroll.js" defer></script>
         <script src="scripts/kakao_api.js" defer></script>
         <script src="scripts/popup.js" defer></script>
+        <script src="scripts/board.js" defer></script>
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     </head>
     <body>
@@ -177,9 +178,18 @@
                 <div id="bride_account" onclick="openPopup('bride_popup')">신부측 계좌 정보</div>
             </div>
         </div>
-        <div class="share" style="height: 30vh;background-color: white;position: relative;">
+        <div class="board">
+            <div class="header"><h2>방명록</h2></div>
+            <div class="visitor_board">
+                <div id="board_items" style="width: 100%;"></div>
+                <div class="board_btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe844AqkEPhBS4dr4Dz8pjHlinB0ngCAWolx3DqA9OMYBzgTw/viewform?usp=sf_link')">
+                    축하메세지 남기기
+                </div>
+            </div>
+        </div>
+        <div class="share">
             <div class="header"><h2>공유하기</h2></div>
-            <div class="share_table">
+            <div class="share_table" style="height: 20vh;background-color: white;position: relative;">
                 <div class="share_btn" onclick="kakaoShare();">
                     <img src="images/katalk.png" alt="카톡 공유"/>
                 </div>

@@ -9,7 +9,7 @@ let scrollDown = true;
 let currentCoverIdx = 0;
 let posMap = new Map();
 
-document.getElementById("blank_div").style.height = coverHeight * covers.length + "px";
+document.getElementById("blank_div").style.height = (coverHeight * covers.length + coverHeight * 0.5) + "px";
 const locationHeaderImage = document.getElementById("location_img");
 
 covers.forEach((entry, idx) => {

@@ -29,7 +29,7 @@ body {
 }
 
 #cover {
-    z-index: 1;
+    z-index: 1000;
     height: 100vh;
     background-color: white;
     position: fixed;
@@ -42,6 +42,7 @@ body {
     margin: auto;
     position: fixed;
     top: 1rem;
+    z-index: -1000;
 }
 
 .web_image {
@@ -53,6 +54,7 @@ body {
     max-height: calc(100vh - 14rem);
     object-fit: scale-down;
     transition: opacity 0.5;
+    z-index: -1000;
 }
 
 .cover_header {
@@ -61,6 +63,7 @@ body {
     font-size: 2rem;
     font-weight: bolder;
     margin-top: 1rem;
+    z-index: -1000;
 }
 
 .cover_text {
@@ -69,6 +72,7 @@ body {
     font-size: 1.8rem;
     margin-top: 1rem;
     font-weight: bold;
+    z-index: -1000;
 }
 
 .invite_msg {
@@ -294,6 +298,7 @@ body {
     white-space: nowrap;
     font-size: 1.3rem;
     font-weight: bolder;
+    border-radius: 0.8rem;
 }
 
 .popup_box .account_header {
@@ -391,6 +396,61 @@ body {
     margin: 0.4rem auto;
     font-size: 1.4rem;
     font-weight: bold;
+    border-radius: 0.8rem
+}
+
+.visitor_board {
+    width: 95%;
+    background-color: #f0f0f0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.8rem
+}
+
+#board_items .item {
+    text-align: left;
+    margin-bottom: 1rem;
+    width: calc(90%);
+}
+
+#board_items .item span {
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+#board_items .item div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#board_items .item div .author {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: 0;
+    padding: 0;
+}
+
+#board_items .item div .timestamp {
+    font-size: 1.2rem;
+    width: fit-content;
+    margin-right: 0;
+    padding: 0;
+}
+
+.board_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: gray;
+    width: 80%;
+    height: 2.3rem;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
 }
 
 .share_table {
