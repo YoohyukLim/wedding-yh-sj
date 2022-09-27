@@ -233,7 +233,7 @@ body {
 
 .contact .contact_info div {
     display: flex;
-    width: 30%;
+    width: 33%;
     max-width: 12rem;
     justify-content: space-between;
     margin: 0
@@ -242,6 +242,7 @@ body {
 .contact .contact_info div img {
     height: 2rem;
     width: 2rem;
+    margin: 0;
 }
 
 .parent_infos {
