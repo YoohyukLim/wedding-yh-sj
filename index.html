@@ -26,6 +26,12 @@
     <body>
         <div id="cover"></div>
 
+        <div class="shortcuts">
+            <div class="shortcut" onclick="scrollToPosition('gallery');">갤러리</div>
+            <div class="shortcut" onclick="scrollToPosition('location_header');">오시는 길</div>
+            <div class="shortcut" onclick="scrollToPosition('contact_header');">연락처</div>
+        </div>
+
         <div class="cover_view">
             <img src="images/cover.jpg" class="web_image">
             <div class="cover_header">임유혁 x 조수정</div>
@@ -59,10 +65,10 @@
     
         <div id="blank_div"></div>
 
-        <div class="invite_msg">
+        <div id="invite_msg">
             <p>초대합니다 머라구머라구</p>
         </div>
-        <div class="gallery">
+        <div id="gallery">
             <p>갤러리</p>
         </div>
 
@@ -119,7 +125,7 @@
         </div>
 
         <div class="contact">
-            <div class="header"><h2>연락처</h2></div>
+            <div class="header" id="contact_header"><h2>연락처</h2></div>
             <div class="contact_info">
                 <span>신랑에게 연락하기</span>
                 <div>

@@ -28,6 +28,19 @@ body {
     margin-bottom: 0;
 }
 
+.shortcuts {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0.3rem;
+}
+
+.shortcut {
+    background-color: white;
+    font-size: 1.3rem;
+    height: 1.8rem;
+}
+
 #cover {
     z-index: 1000;
     height: 100vh;
@@ -36,18 +49,24 @@ body {
     top: 0;
 }
 
+#blank_div {
+    position: relative;
+    z-index: -1000;
+}
+
 .cover_view {
+    background-color: white;
     max-height: 100vh;
     transition: 0.5s;
     margin: auto;
     position: fixed;
-    top: 1rem;
+    top: 2.1rem;
     z-index: -1000;
 }
 
 .web_image {
     display: block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
     max-width: min(80vw, 480px);
@@ -75,7 +94,7 @@ body {
     z-index: -1000;
 }
 
-.invite_msg {
+#invite_msg {
     display: block;
     color: black;
     background: skyblue;
@@ -84,7 +103,7 @@ body {
     position: relative;
 }
 
-.gallery {
+#gallery {
     display: block;
     margin: auto;
     background-color: gainsboro;
@@ -399,6 +418,10 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     border-radius: 0.8rem
+}
+
+.board {
+    background-color: white;
 }
 
 .visitor_board {

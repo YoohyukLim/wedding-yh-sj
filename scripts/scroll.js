@@ -1,4 +1,6 @@
 const covers = document.querySelectorAll(".cover_view");
+const shortcuts = document.querySelector(".shortcuts");
+const blankDiv = document.getElementById("blank_div");
 const coverHeight = (window.innerHeight > 0) ? window.innerHeight : window.screen.availHeight;
 const FULLVIEW_POSITION = coverHeight * 0.2;
 const HAFLVIEW_POSITION = coverHeight * 0.5;
@@ -6,11 +8,9 @@ const HAFLVIEW_POSITION = coverHeight * 0.5;
 let lastKnownScrollPosition = 0;
 let ticking = false;
 let scrollDown = true;
-let currentCoverIdx = 0;
 let posMap = new Map();
 
-document.getElementById("blank_div").style.height = (coverHeight * covers.length + coverHeight * 0.5) + "px";
-const locationHeaderImage = document.getElementById("location_img");
+blankDiv.style.height = (coverHeight * covers.length + coverHeight * 0.5) + "px";
 
 covers.forEach((entry, idx) => {
     if (idx > 0) {
@@ -32,17 +32,12 @@ function applyOpacityOfCover(coverIdx, scrollPos) {
     }
 }
 
-function applyOpacityOfLocationImage(scrollPos) {
-    const locationPos = document.getElementById("location").offsetTop;
-
-    if (scrollDown) {
-        if (scrollPos >= locationPos) {
-            locationHeaderImage.style.opacity = 0;
-        }
+function applyOpacityOfShortcuts(scrollPos) {
+    const targetPos = window.scrollY + blankDiv.getBoundingClientRect().bottom;
+    if (scrollPos >= targetPos) {
+        shortcuts.style.opacity = 0;
     } else {
-        if (scrollPos <= locationPos) {
-            locationHeaderImage.style.opacity = 1;
-        }
+        shortcuts.style.opacity = 1;
     }
 }
 
@@ -51,7 +46,7 @@ function handleScrollEvent(scrollPos) {
         applyOpacityOfCover(i, scrollPos);
     }
 
-    applyOpacityOfLocationImage(scrollPos);
+    applyOpacityOfShortcuts(scrollPos);
 }
 
 document.addEventListener('scroll', (e) => {
@@ -68,10 +63,15 @@ document.addEventListener('scroll', (e) => {
     }
 });
 
+function scrollToPosition(name) {
+    const element = document.getElementById(name);
+    window.scrollTo({top: window.scrollY + element.getBoundingClientRect().top, behavior: "smooth"});
+}
+
 // finish loading
 const topCover = document.getElementById("cover");
 setTimeout(() => {
-    topCover.style.transition = "0.2s"
+    topCover.style.transition = "0.2s";
     topCover.style.opacity = 0;
 }, 500);
 setTimeout(() => {
