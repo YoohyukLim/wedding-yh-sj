@@ -103,13 +103,7 @@ body {
     position: relative;
 }
 
-#gallery {
-    display: block;
-    margin: auto;
-    background-color: gainsboro;
-    height: 50rem;
-    position: relative;
-}
+
 
 .location_header {
     top: -2vw;
@@ -496,4 +490,26 @@ body {
     margin: 0 auto;
     width: 2.3rem;
     height: 2.3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gallery img {
+    justify-content: center;
+    padding: 3px;
+    height: 18vh;
+    width: auto;
+    border-radius: 10px;
+}
+
+.gallery photo:hover {
+    opacity: 0.5;
 }
