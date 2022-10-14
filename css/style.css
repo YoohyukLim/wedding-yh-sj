@@ -494,6 +494,7 @@ body {
 
 #gallery {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     background: white;
     margin-top: 0;
@@ -504,15 +505,19 @@ body {
 
 #gallery img {
     justify-content: center;
-    padding: 1px;
     border-radius: 10px;
-}
-.himg {
+    margin: 0.25rem;
     height: auto;
+    width: calc(100% - 0.5rem);
+}
+
+.vimg {
+    height: fit-content;
     width: 30%;
 }
-.wimg {
-    height: auto;
+
+.himg {
+    height: fit-content;
     width: 63%;
 }
 
