@@ -521,6 +521,6 @@ body {
     width: 63%;
 }
 
-#gallery photo:hover {
+#gallery div:hover {
     opacity: 0.5;
 }
