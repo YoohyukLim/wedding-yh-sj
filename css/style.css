@@ -504,10 +504,16 @@ body {
 
 #gallery img {
     justify-content: center;
-    padding: 3px;
-    height: 18vh;
-    width: auto;
+    padding: 1px;
     border-radius: 10px;
+}
+.himg {
+    height: auto;
+    width: 30%;
+}
+.wimg {
+    height: auto;
+    width: 63%;
 }
 
 #gallery photo:hover {
