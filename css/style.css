@@ -492,7 +492,7 @@ body {
     height: 2.3rem;
 }
 
-.gallery {
+#gallery {
     display: flex;
     flex-wrap: wrap;
     background: white;
@@ -502,7 +502,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.gallery img {
+#gallery img {
     justify-content: center;
     padding: 3px;
     height: 18vh;
@@ -510,6 +510,6 @@ body {
     border-radius: 10px;
 }
 
-.gallery photo:hover {
+#gallery photo:hover {
     opacity: 0.5;
 }
