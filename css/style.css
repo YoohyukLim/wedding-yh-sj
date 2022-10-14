@@ -1,15 +1,15 @@
 * {
     top: 0;
-    margin: auto;
+    left: 0;
+    right: 0;
     padding: 0;
-    width: 100vw;
-    max-width: 600px;
     text-align: center;
     font-family: 'Nanum BaegEuiEuiCeonSa';
 }
 
 body {
     background-color: white;
+    margin: 0;
 }
 
 .header {
@@ -32,17 +32,23 @@ body {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
     top: 0.3rem;
 }
 
 .shortcut {
     background-color: white;
     font-size: 1.3rem;
+    width: 100vw;
+    max-width: 600px;
     height: 1.8rem;
 }
 
 #cover {
     z-index: 1000;
+    width: 100vw;
     height: 100vh;
     background-color: white;
     position: fixed;
@@ -52,10 +58,14 @@ body {
 #blank_div {
     position: relative;
     z-index: -1000;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .cover_view {
     background-color: white;
+    width: 100vw;
+    max-width: 600px;
     max-height: 100vh;
     transition: 0.5s;
     margin: auto;
@@ -66,9 +76,7 @@ body {
 
 .web_image {
     display: block;
-    margin-top: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.5rem auto auto auto;
     max-width: min(80vw, 480px);
     max-height: calc(100vh - 14rem);
     object-fit: scale-down;
@@ -81,7 +89,7 @@ body {
     width: 80%;
     font-size: 2rem;
     font-weight: bolder;
-    margin-top: 1rem;
+    margin: 1rem auto auto auto;
     z-index: -1000;
 }
 
@@ -89,7 +97,7 @@ body {
     background-color: white;
     width: 80%;
     font-size: 1.8rem;
-    margin-top: 1rem;
+    margin: 1rem auto auto auto;
     font-weight: bold;
     z-index: -1000;
 }
@@ -99,15 +107,23 @@ body {
     color: black;
     background: skyblue;
     margin: auto;
+    width: 100vw;
+    max-width: 600px;
     height: 10rem;
     position: relative;
 }
 
-
+#gallery {
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
+}
 
 .location_header {
     top: -2vw;
-    width: 100%;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
     height: min(45vw, 280px);
     position: sticky;
     vertical-align: middle;
@@ -120,6 +136,8 @@ body {
     top: -3rem;
     left:0;
     z-index: -2;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -137,10 +155,11 @@ body {
 #location_header {
     color: white;
     text-align: left;
-    width: auto;
-    margin-top: -5rem;
+    margin: -5rem auto auto auto;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    width: calc(100vw - 1rem);
+    max-width: calc(600px - 1rem);
     font-size: 1.8rem;
     z-index: -1;
 }
@@ -148,12 +167,18 @@ body {
 #location {
     display: block;
     position: relative;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
     background-color: white;
     overflow-x: hidden;
 }
 
 #location_info {
     position: relative;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .map_title {
@@ -179,15 +204,18 @@ body {
     font-size: 1.5rem;
     text-align: left;
     max-width: 100%;
+    margin: 0
 }
 
 .call_icon {
     position: absolute;
     top: 0;
     bottom: 0;
+    left: auto;
     right: 0.5rem;
     width: 3rem;
     height: 3rem;
+    margin: auto;
     vertical-align: middle;
 }
 
@@ -229,13 +257,16 @@ body {
 .contact {
     background-color: white;
     position: relative;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .contact_info {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-bottom: 1rem;
+    margin: auto auto 1rem auto;
 }
 
 .contact .contact_info span {
@@ -261,13 +292,15 @@ body {
 
 .parent_infos {
     display: flex;
-    width: 80%
+    width: 80%;
+    margin: auto;
 }
 
 .parent_info_list {
     display: flex;
     flex-direction: column;
     width: fit-content;
+    margin: auto;
 }
 
 .parent_info_list div {
@@ -299,8 +332,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
     background-color: white;
     position: relative;
+}
+
+.account_details {
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .account_details div {
@@ -309,7 +351,7 @@ body {
     width: 40%;
     height: 3rem;
     line-height: 3rem;
-    margin-bottom: 1rem;
+    margin: auto auto 1rem auto;
     white-space: nowrap;
     font-size: 1.3rem;
     font-weight: bolder;
@@ -318,7 +360,7 @@ body {
 
 .popup_box .account_header {
     width: fit-content;
-    margin-left: 1rem;
+    margin: auto auto auto 1rem;
     font-size: 1.4rem;
     font-weight: bolder;
 }
@@ -392,6 +434,7 @@ body {
     width: fit-content;
     height: fit-content;
     top: 50%;
+    margin: auto;
     transform: translateY(-50%);
     z-index:1002;
     box-sizing:border-box;
@@ -416,11 +459,15 @@ body {
 
 .board {
     background-color: white;
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .visitor_board {
     width: 95%;
     background-color: #f0f0f0;
+    margin: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 0.8rem
@@ -428,8 +475,8 @@ body {
 
 #board_items .item {
     text-align: left;
-    margin-bottom: 1rem;
     width: calc(90%);
+    margin: auto auto 1rem auto;
 }
 
 #board_items .item span {
@@ -466,10 +513,17 @@ body {
     background-color: gray;
     width: 80%;
     height: 2.3rem;
+    margin: auto;
     white-space: nowrap;
     font-size: 1.3rem;
     font-weight: bold;
     border-radius: 0.5rem;
+}
+
+.share {
+    margin: auto;
+    width: 100vw;
+    max-width: 600px;
 }
 
 .share_table {
@@ -499,8 +553,6 @@ body {
     background: white;
     margin-top: 0;
     margin-bottom: 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #gallery img {
