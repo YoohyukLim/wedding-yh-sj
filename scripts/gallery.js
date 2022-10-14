@@ -1,5 +1,5 @@
 lightbox.option({
     wrapAround: true,
-    disableScrolling: false,
+    disableScrolling: true,
     fitImagesInViewport: true,
 })
