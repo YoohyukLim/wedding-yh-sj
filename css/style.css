@@ -102,15 +102,14 @@ body {
     z-index: -1000;
 }
 
-#invite_msg {
-    display: block;
-    color: black;
-    background: skyblue;
-    margin: auto;
-    width: 100vw;
-    max-width: 600px;
-    height: 10rem;
-    position: relative;
+#gallery_header {
+    text-align: left;
+    margin: -5rem auto auto auto;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: calc(100vw - 1rem);
+    max-width: calc(600px - 1rem);
+    font-size: 1.8rem;
 }
 
 #gallery {
@@ -553,6 +552,7 @@ body {
     background: white;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 1rem;
 }
 
 #gallery img {
@@ -570,7 +570,7 @@ body {
 
 .himg {
     height: fit-content;
-    width: 63%;
+    width: 65%;
 }
 
 #gallery div:hover {
