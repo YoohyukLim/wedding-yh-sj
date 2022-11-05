@@ -16,7 +16,7 @@ body {
     display: flex;
     align-items: flex-end;
     width: calc(100% - 1rem);
-    height: 10vh;
+    height: 5vh;
     padding-left: 1rem;
     padding-bottom: 1rem;
     background-color: white;
@@ -103,11 +103,14 @@ body {
 }
 
 #gallery_header {
+    display: flex;
+    align-items: flex-end;
     text-align: left;
-    margin: -5rem auto auto auto;
+    margin: auto;
     padding-left: 1rem;
     padding-bottom: 1rem;
     width: calc(100vw - 1rem);
+    height: 5vh;
     max-width: calc(600px - 1rem);
     font-size: 1.8rem;
 }
@@ -119,7 +122,7 @@ body {
     background: white;
     margin: auto;
     width: calc(100vw - 2rem);
-    max-width: 600px;
+    max-width: calc(600px - 2rem);
     margin-top: 0;
     margin-bottom: 0;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -202,6 +205,7 @@ body {
     display: block;
     position: relative;
     margin: auto;
+    padding-bottom: 5vh;
     width: 100vw;
     max-width: 600px;
     background-color: white;
@@ -292,6 +296,7 @@ body {
     background-color: white;
     position: relative;
     margin: auto;
+    padding-bottom: 5vh;
     width: 100vw;
     max-width: 600px;
 }
@@ -367,6 +372,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding-bottom: 5vh;
     width: 100vw;
     max-width: 600px;
     background-color: white;
@@ -494,6 +500,7 @@ body {
 .board {
     background-color: white;
     margin: auto;
+    padding-bottom: 5vh;
     width: 100vw;
     max-width: 600px;
 }
