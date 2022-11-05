@@ -348,9 +348,9 @@ body {
 }
 
 .parent_info_list span {
-    width: fit-content;
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 .parent_info_list div img {
