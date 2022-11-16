@@ -140,11 +140,6 @@ body {
     width: 33%;
 }
 
-.himg {
-    height: fit-content;
-    width: 66%;
-}
-
 #gallery div:hover {
     opacity: 0.5;
 }
