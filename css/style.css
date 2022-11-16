@@ -4,7 +4,7 @@
     right: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Nanum BaegEuiEuiCeonSa';
+    font-family: 'Nanum NaEuiANaeSonGeurSsi';
 }
 
 body {
@@ -243,8 +243,8 @@ body {
     bottom: 0;
     left: auto;
     right: 0.5rem;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     margin: auto;
     vertical-align: middle;
 }
@@ -271,8 +271,8 @@ body {
 }
 
 .copy_location {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     margin: 0 0.5rem 0 0;
@@ -378,8 +378,8 @@ body {
 }
 
 .account_details div {
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: #f8be6f;
     width: 40%;
     height: 3rem;
     line-height: 3rem;
@@ -478,8 +478,8 @@ body {
 }
 
 .popup_box .popup_btn {
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: #f8be6f;
     width: 10rem;
     height: 3rem;
     line-height: 3rem;
@@ -499,7 +499,7 @@ body {
 
 .visitor_board {
     width: 95%;
-    background-color: #f0f0f0;
+    background-color: #FAF6F0;
     margin: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -542,8 +542,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: #f8be6f;
     width: 80%;
     height: 2.3rem;
     margin: auto;

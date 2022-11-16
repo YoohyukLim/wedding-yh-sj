@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Nanum BaegEuiEuiCeonSa;
-    src: local(Nanum BaegEuiEuiCeonSa),
-         url(../fonts/nanum-baegeuieuiceonsa.woff2) format('woff2'),
-         url(../fonts/nanum-baegeuieuiceonsa.woff) format('woff'),
-         url(../fonts/nanum-baegeuieuiceonsa.ttf) format('truetype');
+    font-family: Nanum NaEuiANaeSonGeurSsi;
+    src: local(Nanum NaEuiANaeSonGeurSsi),
+         url(../fonts/nanum-mywife.woff2) format('woff2'),
+         url(../fonts/nanum-mywife.woff) format('woff'),
+         url(../fonts/nanum-mywife.ttf) format('truetype');
     font-style: normal;
     font-weight: normal;
     unicode-range: U+0-10FFFF;
