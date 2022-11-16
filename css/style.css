@@ -112,6 +112,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     background: white;
+    align-items: center;
     margin: auto;
     width: calc(100vw - 2rem);
     max-width: calc(600px - 2rem);
@@ -129,14 +130,14 @@ body {
 #gallery img {
     justify-content: center;
     border-radius: 10px;
-    margin: 0.5rem;
+    margin: 0.2rem;
     height: auto;
-    width: calc(100% - 1rem);
+    width: calc(100% - 0.4rem);
 }
 
 .vimg {
     height: fit-content;
-    width: 32%;
+    width: 33%;
 }
 
 .himg {
