@@ -2,7 +2,7 @@ const covers = document.querySelectorAll(".cover_view");
 const shortcuts = document.querySelector(".shortcuts");
 const blankDiv = document.getElementById("blank_div");
 const coverHeight = (window.innerHeight > 0) ? window.innerHeight : window.screen.availHeight;
-const FULLVIEW_POSITION = coverHeight * 0.2;
+const FULLVIEW_POSITION = coverHeight * 0.4;
 const HAFLVIEW_POSITION = coverHeight * 0.5;
 
 let lastKnownScrollPosition = 0;
