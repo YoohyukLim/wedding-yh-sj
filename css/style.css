@@ -116,7 +116,15 @@ body {
     max-width: 600px;
     font-size: 1.8rem;
 }
-
+#info {
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+    height: 5vh;
+    max-width: 600px;
+    font-size: 1.8rem;
+    color: black;
+}
 #gallery {
     display: flex;
     justify-content: space-between;
