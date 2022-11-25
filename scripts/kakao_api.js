@@ -22,8 +22,8 @@ kakaoNavi.onclick = function() {
     })
   }
 
-function kakaoShare() {
+function kakaoShare(templeteId) {
   Kakao.Share.sendCustom({
-    templateId: 83174,
+    templateId: templeteId,
   });
 }
