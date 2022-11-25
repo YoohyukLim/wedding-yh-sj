@@ -98,6 +98,16 @@ body {
     z-index: -1000;
 }
 
+#invitation {
+    width: 95%;
+    background-color: #FAF6F0;
+    margin: auto auto 1rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+}
+
 #gallery_header {
     text-align: center;
     margin: auto;
