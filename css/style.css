@@ -397,7 +397,7 @@ body {
     justify-content: space-between;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    width: fit-content;
+    width: 100%;
 }
 
 .account_info .account_name {
@@ -426,6 +426,12 @@ body {
 .account_info .account_name span {
     margin-left: 0;
     width: fit-content;
+}
+
+.account_info .account_info_details {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
 }
 
 .account_info .account_info_detail {
