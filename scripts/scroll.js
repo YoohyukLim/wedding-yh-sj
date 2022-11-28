@@ -85,5 +85,7 @@ new Promise((resolve) => {
         resolve();
     }, 1000)
 }).then(() => {
-    topCover.remove();
+    setTimeout(() => {
+        topCover.remove();
+    }, 200)
 });
