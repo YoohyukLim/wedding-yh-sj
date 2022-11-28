@@ -17,22 +17,24 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/scroll_icon.css">
+        <script src="scripts/board.js" defer></script>
         <script src="scripts/common.js" defer></script>
-        <script src="scripts/scroll.js" defer></script>
-        <script src="scripts/location.js" defer></script>
+        <script src="scripts/gallery.js" defer></script>
         <script src="scripts/kakao_api.js" defer></script>
         <script src="scripts/popup.js" defer></script>
-        <script src="scripts/gallery.js" defer></script>
-        <script src="scripts/board.js" defer></script>
+        <script src="scripts/scroll.js" defer></script>
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     </head>
     <body>
         <div id="cover"></div>
 
         <div class="shortcuts">
-            <div class="shortcut" onclick="scrollToPosition('gallery_header');">갤러리</div>
-            <div class="shortcut" onclick="scrollToPosition('location_header');">오시는 길</div>
-            <div class="shortcut" onclick="scrollToPosition('contact_header');">연락처</div>
+            <div class="shorcuts_wrapper">
+                <div class="shortcut" onclick="scrollToPosition('gallery_header');">갤러리</div>
+                <div class="shortcut" onclick="scrollToPosition('location_header');">오시는 길</div>
+                <div class="shortcut" onclick="scrollToPosition('contact_header');">연락처</div>
+            </div>
+            <div class="scroll_progress"></div>
         </div>
 
         <div class="cover_view">
