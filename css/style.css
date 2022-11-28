@@ -25,13 +25,16 @@ body {
 }
 
 .shortcuts {
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     margin: auto;
     width: 100vw;
     max-width: 600px;
     top: 0.3rem;
+}
+
+.shorcuts_wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .shortcut {
@@ -40,6 +43,14 @@ body {
     width: 100vw;
     max-width: 600px;
     height: 1.8rem;
+}
+
+.scroll_progress {
+    background-color: #f8be6f;
+    width: 0%;
+    height: 0.3rem;
+    left: 0%;
+    margin: 0;
 }
 
 #cover {

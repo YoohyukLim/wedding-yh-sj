@@ -1,6 +1,7 @@
 const covers = document.querySelectorAll(".cover_view");
 const shortcuts = document.querySelector(".shortcuts");
 const blankDiv = document.getElementById("blank_div");
+const progressBar = document.querySelector(".scroll_progress");
 const coverHeight = (window.innerHeight > 0) ? window.innerHeight : window.screen.availHeight;
 const FULLVIEW_POSITION = coverHeight * 0.4;
 const HAFLVIEW_POSITION = coverHeight * 0.5;
@@ -41,12 +42,20 @@ function applyOpacityOfShortcuts(scrollPos) {
     }
 }
 
+function applyProgressBar(scrollPos) {
+    const targetPos = window.scrollY + blankDiv.getBoundingClientRect().bottom;
+    const progressBarWidthPercent = Math.min(scrollPos / targetPos * 100, 100);
+    progressBar.style.width = progressBarWidthPercent + "%"
+}
+
 function handleScrollEvent(scrollPos) {
     for (let i = 0; i < covers.length; i++) {
         applyOpacityOfCover(i, scrollPos);
     }
 
     applyOpacityOfShortcuts(scrollPos);
+
+    applyProgressBar(scrollPos);
 }
 
 document.addEventListener('scroll', (e) => {
@@ -67,13 +76,14 @@ function scrollToPosition(name) {
     const element = document.getElementById(name);
     window.scrollTo({top: window.scrollY + element.getBoundingClientRect().top, behavior: "smooth"});
 }
-
 // finish loading
 const topCover = document.getElementById("cover");
-setTimeout(() => {
-    topCover.style.transition = "0.2s";
-    topCover.style.opacity = 0;
-}, 500);
-setTimeout(() => {
+new Promise((resolve) => {
+    setTimeout(() => {
+        topCover.style.transition = "0.2s";
+        topCover.style.opacity = 0;
+        resolve();
+    }, 1000)
+}).then(() => {
     topCover.remove();
-}, 700);
+});
